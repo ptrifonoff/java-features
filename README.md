@@ -18,6 +18,15 @@ each version of Java since version 9.
 ### Interfaces
 * Private methods on interfaces
 
+## Language features with no sample code in this project (TODOs for further releases)
+* Optional
+** <code>Optional.ifPresent(Consumer)</code>
+** <code>Optional.ifPresentOrElse</code>
+** <code>Optional.or</code>
+* Scanner returns Streams now
+** <code>Scanner.findAll</code>
+** <code>Process.getCurrentPid</code>: get the current process id
+
 ### Other Features of Java 9 beside language features
 * JShell: Executing Java Code on command line
 * Multi-Release-Jar: Defining alternative classes for newer Java versions, to support compatibility for older versions
