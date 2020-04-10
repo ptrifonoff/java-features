@@ -5,6 +5,8 @@ import java.util.stream.IntStream;
 public class StreamDropAndTakeWhile {
 
     public static void main(String[] args) {
+        // the methods takeWhile and dropWhile only make sense with ordered streams - otherwise it's not deterministic
+        
         // TODO takeWhile stops iteration of stream as soon as takeWhile predicate evaluates to false; the number >= 13 does not have any effect
         System.out.println(
                 "* Iterating stream using new method takeWhile: stops when condition evaluates to false the first time *");
