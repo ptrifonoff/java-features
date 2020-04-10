@@ -9,7 +9,7 @@ each version of Java since version 9.
 * Dive into Maven modules "java-9-features" and "java-9-module-consumer"
 
 ### Collections
-* Collection factory methods (<code>List.of</code>, <code>Set.of</code>, <code>Map.of</code>)
+* Collection factory methods (<code>List.of</code>, <code>Set.of</code>, <code>Map.of</code>, <code>Map.ofEntries</code>)
 * <code>Stream.dropWhile</code>
 * <code>Stream.takeWhile</code>
 * <code>Stream.ofNullable</code>
@@ -18,3 +18,6 @@ each version of Java since version 9.
 ### Interfaces
 * Private methods on interfaces
 
+### Other Features of Java 9 beside language features
+* JShell: Executing Java Code on command line
+* Multi-Release-Jar: Defining alternative classes for newer Java versions, to support compatibility for older versions
