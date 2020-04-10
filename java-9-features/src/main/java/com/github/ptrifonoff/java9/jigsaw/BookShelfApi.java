@@ -1,4 +1,4 @@
-package com.github.ptrifonoff.java9.modularization;
+package com.github.ptrifonoff.java9.jigsaw;
 
 public interface BookShelfApi {
 

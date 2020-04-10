@@ -1,6 +1,6 @@
-package com.github.ptrifonoff.java9.modularization;
+package com.github.ptrifonoff.java9.jigsaw;
 
-import com.github.ptrifonoff.java9.modularization.internal.WeHaveEverythingBookShelfInternalImpl;
+import com.github.ptrifonoff.java9.jigsaw.internal.WeHaveEverythingBookShelfInternalImpl;
 
 public class BookShelfFactory {
 
