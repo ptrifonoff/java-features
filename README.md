@@ -20,12 +20,12 @@ each version of Java since version 9.
 
 ## Language features with no sample code in this project (TODOs for further releases)
 * Optional
-** <code>Optional.ifPresent(Consumer)</code>
-** <code>Optional.ifPresentOrElse</code>
-** <code>Optional.or</code>
+    * <code>Optional.ifPresent(Consumer)</code>
+    * <code>Optional.ifPresentOrElse</code>
+    * <code>Optional.or</code>
 * Scanner returns Streams now
-** <code>Scanner.findAll</code>
-** <code>Process.getCurrentPid</code>: get the current process id
+    * <code>Scanner.findAll</code>
+    * <code>Process.getCurrentPid</code>: get the current process id
 
 ### Other Features of Java 9 beside language features
 * JShell: Executing Java Code on command line
