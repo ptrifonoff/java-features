@@ -32,11 +32,12 @@ The sample code has been published with Apache 2.0 license.
 ### Interfaces
 * Private methods on interfaces
 
+### Optional
+* <code>Optional.ifPresentOrElse</code>: define a default action when there is no value
+* <code>Optional.or</code>: define a default of type Optional
+* <code>Optional.stream</code>: converting an Optional to a Stream
+
 ## Language features with no sample code in this project (TODOs for further releases)
-* Optional
-    * <code>Optional.ifPresent(Consumer)</code>
-    * <code>Optional.ifPresentOrElse</code>
-    * <code>Optional.or</code>
 * Scanner returns Streams now
     * <code>Scanner.findAll</code>
     * <code>Process.getCurrentPid</code>: get the current process id

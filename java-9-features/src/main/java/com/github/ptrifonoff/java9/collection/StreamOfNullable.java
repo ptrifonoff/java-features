@@ -12,9 +12,5 @@ public class StreamOfNullable {
 
         System.out.println("* Stream.ofNullable(1): result *");
         Stream.ofNullable(1).forEach(System.out::println);
-
-        // TODO Optional.stream(): converting an Optional to a Stream
-        System.out.println("* Creating a stream of Optional *");
-        Optional.of("optional converted to stream").stream().forEach(System.out::println);
     }
 }
