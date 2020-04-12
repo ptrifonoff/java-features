@@ -37,7 +37,11 @@ The sample code has been published with Apache 2.0 license.
 * <code>Optional.or</code>: define a default of type Optional
 * <code>Optional.stream</code>: converting an Optional to a Stream
 
-## Language features with no sample code in this project (TODOs for further releases)
+### ProcessHandle
+* <code>ProcessHandle</code>: useful methods to deal with processes
+* <code>ProcessHandle.current().pid()</code>: get PID of the current process
+
+### Language features with no sample code in this project (TODOs for further releases)
 * Scanner returns Streams now
     * <code>Scanner.findAll</code>
     * <code>Process.getCurrentPid</code>: get the current process id
