@@ -1,7 +1,7 @@
-# New Java language features as code 
+# A short history of Java language features as code
 This project is for those, who are already familiar with Java and want to study 
-new important language features of versions since Java 9 by stepping through code
-instead of blog posts. It is a workshop for yourself.
+new significant language features of versions since Java 9 by stepping through code
+instead of reading through blog posts. It is a workshop for yourself.
 
 ## How to use the samples
 * The samples in this project are meant to be self-explanatory or with little
@@ -49,3 +49,7 @@ The sample code has been published under the Apache 2.0 license.
 ### Other Features of Java 9 beside language features
 * JShell: Executing Java Code on command line
 * Multi-Release-Jar: Defining alternative classes for newer Java versions, to support compatibility for older versions
+
+## Java 10
+### Local variable Type inference
+* <code>var</code> type declaration: instead of declaring the explicit type, var allows you to implicitly use the type on the right
