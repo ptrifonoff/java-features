@@ -7,7 +7,7 @@ import java.util.Set;
 public class CollectionFactoryMethods {
 
     public static void main(String[] args) {
-        // TODO there are now collection factory methods on List, Set and Map
+        // TODO List.of(), Set.of(), Map.of(): there are now collection factory methods on collection interfaces
         List<String> stringListCreatedWithOfFactory = List.of("Element 1", "Element 2", "Element 3");
         System.out.println("Liste = " + stringListCreatedWithOfFactory);
 

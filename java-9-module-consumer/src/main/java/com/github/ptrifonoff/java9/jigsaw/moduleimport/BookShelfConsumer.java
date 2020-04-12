@@ -8,7 +8,14 @@ import java.lang.reflect.Method;
 
 public class BookShelfConsumer {
 
-    public boolean isMyFavoriteBookAvailable() {
+    public static void main(String[] args)
+            throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        System.out.println("my favorite book availability is " + new BookShelfConsumer().isMyFavoriteBookAvailable());
+        System.out.println("my favorite book availability with reflective call is " + new BookShelfConsumer()
+                .isMyFavoriteBookAvailableWithReflection());
+    }
+
+    private boolean isMyFavoriteBookAvailable() {
         BookShelfApi bookShelf = BookShelfFactory.produceBookShelf();
         /*
          * TODO try it out:
@@ -18,7 +25,7 @@ public class BookShelfConsumer {
         return bookShelf.isBookAvailable("12345");
     }
 
-    public boolean isMyFavoriteBookAvailableWithReflection()
+    private boolean isMyFavoriteBookAvailableWithReflection()
             throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         Method bookshelfProducerMethod = Class.forName("com.github.ptrifonoff.java9.jigsaw.BookShelfFactory")
                 .getMethod("produceBookShelf");
@@ -27,17 +34,10 @@ public class BookShelfConsumer {
         /*
          * TODO try it out:
          *  1) if you use keyword "opens" instead of "exports" in module bookshelf, you will not be able to call classes of the Bookshelf-API directly, but with reflection
-         *  2) you won't be able to call a method with reflection, if you don't export anything 
+         *  2) you won't be able to call a method even with reflection, if you don't export anything
          */
         return (boolean) Class.forName("com.github.ptrifonoff.java9.jigsaw.BookShelfApi")
                 .getMethod("isBookAvailable", String.class).invoke(bookShelf, "12345");
-    }
-
-    public static void main(String[] args)
-            throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
-        System.out.println("my favorite book availability is " + new BookShelfConsumer().isMyFavoriteBookAvailable());
-        System.out.println("my favorite book availability with reflective call is " + new BookShelfConsumer()
-                .isMyFavoriteBookAvailableWithReflection());
     }
 
 }

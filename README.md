@@ -1,6 +1,20 @@
-# New Java language features by sample code 
-This is a sample project for presenting some of the new language features in 
-each version of Java since version 9.
+# New Java language features as code 
+This project is for those, who are already familiar with Java and want to study 
+new important language features of versions since Java 9 by stepping through code
+instead of blog posts. It is a workshop for yourself.
+
+## How to use the samples
+* The samples in this project are meant to be self-explanatory or with little
+description in comments.
+* Each feature is marked with a 'TODO' to guide you through
+all samples. If your IDE supports it, you may have a list view with all TODOs to get
+a quick overview about the features in each version.
+* Where possible there is a <code>main</code> method to simply run the code.
+* Sometimes there is a "try it out" in the comment to get familiar with variants of a
+feature.
+
+## License
+The sample code has been published with Apache 2.0 license.
 
 ## Java 9
 ### Modularization (Project Jigsaw)
