@@ -1,17 +1,17 @@
-# A short history of Java language features as code
+# A brief history of Java language features as code
 This project is for those, who are already familiar with Java and want to study 
-new significant language features of versions since Java 9 by stepping through code
-instead of reading through blog posts. It is a workshop for yourself.
+new significant language features since Java version 9 by stepping through code
+instead of reading through blog posts.
 
 ## How to use the samples
 * The samples in this project are meant to be self-explanatory or with little
 description in comments.
-* Each feature is marked with a 'TODO' to guide you through
-all samples. If your IDE supports it, you may have a list view with all TODOs to get
-a quick overview about the features in each version.
+* Each feature is marked with a 'TODO' to guide you through all samples. If your 
+IDE supports it, you may have a list view with all TODOs to get a quick overview
+about the features in each version.
 * Where possible there is a <code>main</code> method to simply run the code.
-* Sometimes there is a "try it out" in the comment to get familiar with variants of a
-feature.
+* Sometimes there is a "try it out" in the comment to get familiar with variants
+of a feature.
 
 ## License
 The sample code has been published under the Apache 2.0 license.
@@ -53,3 +53,10 @@ The sample code has been published under the Apache 2.0 license.
 ## Java 10
 ### Local variable Type inference
 * <code>var</code> type declaration: instead of declaring the explicit type, var allows you to implicitly use the type on the right
+
+### Collections
+* <code>List/Set/Map.copyOf</code>: produces unmodifiable copy of a collection
+* <code>Collectors.toUnmodifiableList</code> to collect streams to a list (also available for Set or Map)
+
+### Optional
+* <code>Optional.orElseThrow</code>: throws <code>NoSuchElementException</code> if Optional is empty
