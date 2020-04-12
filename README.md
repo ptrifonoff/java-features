@@ -14,7 +14,7 @@ a quick overview about the features in each version.
 feature.
 
 ## License
-The sample code has been published with Apache 2.0 license.
+The sample code has been published under the Apache 2.0 license.
 
 ## Java 9
 ### Modularization (Project Jigsaw)
@@ -24,10 +24,10 @@ The sample code has been published with Apache 2.0 license.
 
 ### Collections
 * Collection factory methods (<code>List.of</code>, <code>Set.of</code>, <code>Map.of</code>, <code>Map.ofEntries</code>)
-* <code>Stream.dropWhile</code>
-* <code>Stream.takeWhile</code>
-* <code>Stream.ofNullable</code>
-* Stream iteration with predicates: New Stream.iterate method where you can describe the iteration conditions similar to <code>for (int i = 0; i < 10; i++)</code>
+* <code>Stream.dropWhile</code>: starts iteration of stream as soon as dropWhile predicate evaluates to true; the number >= 13 does not have any effect
+* <code>Stream.takeWhile</code>: stops iteration of stream as soon as takeWhile predicate evaluates to false; the or-condition (number >= 13) in the sample below does not have any effect
+* <code>Stream.ofNullable</code>: passing a possible null element to Stream factory method
+* <code>Stream.iterate</code> overload method with predicate: New Stream.iterate method where you can describe the iteration conditions similar to <code>for (int i = 0; i < 10; i++)</code>
 
 ### Interfaces
 * Private methods on interfaces
