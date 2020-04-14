@@ -1,7 +1,8 @@
 # A brief history of Java language features as code
 This project is for those, who are already familiar with Java and want to study 
 new significant language features since Java version 9 by stepping through code
-instead of reading through blog posts.
+instead of reading through blog posts. Because one line of code says more than
+a thousand words ;-)
 
 ## How to use the samples
 * The samples in this project are meant to be self-explanatory or with little
@@ -58,3 +59,19 @@ The sample code has been published under the Apache 2.0 license.
 
 ### Optional
 * <code>Optional.orElseThrow</code>: throws <code>NoSuchElementException</code> if Optional is empty
+
+## Java 11
+### String Methods
+* <code>String.isBlank</code>: tests a String for one or more chars that are interpreted as "blank" like empty string, blank space, tab, crlf
+* <code>String.lines</code>: extracts the lines in a string to a Stream
+* <code>String.strip</code>, <code>String.stripLeading</code>, <code>String.stripTrailing</code> removes whitespaces supporting unicode whitespaces (in contrast to <code>String.trim</code>)
+* <code>String.repeat</code>:
+
+### TODOs
+* <code>var</code> for Lambdas: Local-Variable Syntax for Lambda Parameters
+* Nested Based Access Control
+* Remove the Java EE and CORBA Modules
+* Flight Recorder
+* HTTP Client
+* Reading/Writing Strings to and from the Files
+* ChaCha20 and Poly1305 Cryptographic Algorithms

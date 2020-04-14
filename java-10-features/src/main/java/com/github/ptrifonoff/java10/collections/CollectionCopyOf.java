@@ -1,6 +1,5 @@
 package com.github.ptrifonoff.java10.collections;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
