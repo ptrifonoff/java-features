@@ -41,10 +41,8 @@ The sample code has been published under the Apache 2.0 license.
 * <code>ProcessHandle</code>: useful methods to deal with processes
 * <code>ProcessHandle.current().pid()</code>: get PID of the current process
 
-### Language features with no sample code in this project (TODOs for further releases)
-* Scanner returns Streams now
-    * <code>Scanner.findAll</code>
-    * <code>Process.getCurrentPid</code>: get the current process id
+### Scanner (regular expression handling)
+* <code>Scanner.findAll</code>: returns a Stream of MatchResult to easily walk through all regular expression results
 
 ### Other Features of Java 9 beside language features
 * JShell: Executing Java Code on command line
