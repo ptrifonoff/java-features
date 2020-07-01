@@ -65,13 +65,15 @@ The sample code has been published under the Apache 2.0 license.
 * <code>String.isBlank</code>: tests a String for one or more chars that are interpreted as "blank" like empty string, blank space, tab, crlf
 * <code>String.lines</code>: extracts the lines in a string to a Stream
 * <code>String.strip</code>, <code>String.stripLeading</code>, <code>String.stripTrailing</code> removes whitespaces supporting unicode whitespaces (in contrast to <code>String.trim</code>)
-* <code>String.repeat</code>:
+* <code>String.repeat</code>: repeats a string n times
 
-### TODOs
+### Local variable Type inference extended
 * <code>var</code> for Lambdas: Local-Variable Syntax for Lambda Parameters
-* Nested Based Access Control
-* Remove the Java EE and CORBA Modules
-* Flight Recorder
+
+### Other Features of Java 11
+* Nested Based Access Control: handling for nested/inner classes - new methods for access via reflection: <code>Class.getNestHost()</code>, <code>Class.getNestMembers()</code>, <code>Class.isNestmateOf()</code>
+* Removed Java EE and CORBA Modules (Common Object Request Broker Architecture): _java.activation_, _java.xml.bind_, _java.xml.ws_, _java.transaction_, _java.corba_,... are not parts of Java anymore
+* JDK Flight Recorder/JDK Mission Control: These tools are now published as Open Source and available in OpenJDK; can be activated with the Commandline Parameter <code>-XX:StartFlightRecording</code>; the result file can be analyzed with JDK Mission Control
 * HTTP Client
 * Reading/Writing Strings to and from the Files
 * ChaCha20 and Poly1305 Cryptographic Algorithms
