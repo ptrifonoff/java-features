@@ -67,13 +67,19 @@ The sample code has been published under the Apache 2.0 license.
 * <code>String.strip</code>, <code>String.stripLeading</code>, <code>String.stripTrailing</code> removes whitespaces supporting unicode whitespaces (in contrast to <code>String.trim</code>)
 * <code>String.repeat</code>: repeats a string n times
 
+### File Handling
+* <code>Files.writeString</code>: Convenience Method for writing a String into a file
+* <code>Files.readString</code>: Convenience Method for reading a String into a file
+
 ### Local variable Type inference extended
 * <code>var</code> for Lambdas: Local-Variable Syntax for Lambda Parameters
+
+### HTTP Client
+* <code>HTTPClient</code>: supports HTTP 1.1 and 2 for synchronous and asynchronous requests
 
 ### Other Features of Java 11
 * Nested Based Access Control: handling for nested/inner classes - new methods for access via reflection: <code>Class.getNestHost()</code>, <code>Class.getNestMembers()</code>, <code>Class.isNestmateOf()</code>
 * Removed Java EE and CORBA Modules (Common Object Request Broker Architecture): _java.activation_, _java.xml.bind_, _java.xml.ws_, _java.transaction_, _java.corba_,... are not parts of Java anymore
 * JDK Flight Recorder/JDK Mission Control: These tools are now published as Open Source and available in OpenJDK; can be activated with the Commandline Parameter <code>-XX:StartFlightRecording</code>; the result file can be analyzed with JDK Mission Control
-* HTTP Client
-* Reading/Writing Strings to and from the Files
-* ChaCha20 and Poly1305 Cryptographic Algorithms
+* Implementation of the ChaCha20 and ChaCha20-Poly1305 cryptographic algorithms
+* Nashorn JavaScript Engine is deprecated (module <code>jdk.scripting.nashorn</code>) - so you would better use another engine when support of Java 11 ends
