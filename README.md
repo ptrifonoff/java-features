@@ -19,7 +19,7 @@ The sample code has been published under the Apache 2.0 license.
 
 ## Java 9
 ### Modularization (Project Jigsaw)
-* Demonstrating how to define Modules and configure dependency constraints
+* java-9-* Maven modules show how to define Java Modules and configure dependency constraints between Java modules 
 * Start with package <code>com.github.ptrifonoff.java9.jigsaw</code>
 * Dive into Maven modules "java-9-features" and "java-9-module-consumer"
 
@@ -55,7 +55,7 @@ The sample code has been published under the Apache 2.0 license.
 
 ### Collections
 * <code>List/Set/Map.copyOf</code>: produces unmodifiable copy of a collection
-* <code>Collectors.toUnmodifiableList</code> to collect streams to a list (also available for Set or Map)
+* <code>Collectors.toUnmodifiableList</code> to collect streams to an unmodifiable list (also available for Set or Map)
 
 ### Optional
 * <code>Optional.orElseThrow</code>: throws <code>NoSuchElementException</code> if Optional is empty
