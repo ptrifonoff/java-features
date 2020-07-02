@@ -1,6 +1,5 @@
 package com.github.ptrifonoff.java9.collection;
 
-import java.util.Optional;
 import java.util.stream.Stream;
 
 public class StreamOfNullable {
