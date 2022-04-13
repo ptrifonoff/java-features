@@ -1,0 +1,2 @@
+First line
+Second line differs from test1.txt

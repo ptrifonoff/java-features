@@ -83,3 +83,12 @@ The sample code has been published under the Apache 2.0 license.
 * JDK Flight Recorder/JDK Mission Control: These tools are now published as Open Source and available in OpenJDK; can be activated with the Commandline Parameter <code>-XX:StartFlightRecording</code>; the result file can be analyzed with JDK Mission Control
 * Implementation of the ChaCha20 and ChaCha20-Poly1305 cryptographic algorithms
 * Nashorn JavaScript Engine is deprecated (module <code>jdk.scripting.nashorn</code>) - so you would better use another engine when support of Java 11 ends
+
+## Java 12
+### String Methods
+* <code>String.indent</code>: adds number of blanks when number is positive, when negative it removes blanks (and adds an unexpected new line char at the end)
+* <code>String.transform</code>: a method for string manipulation with a lambda expression
+
+### Files
+* <code>File::mismatch Method</code>: returns byte position of first difference or -1
+

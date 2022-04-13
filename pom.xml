@@ -19,6 +19,7 @@
         <module>java-9-module-consumer</module>
         <module>java-10-features</module>
         <module>java-11-features</module>
+        <module>java-12-features</module>
     </modules>
     
     <build>
